@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+Проверка полисов (бланков)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="МСГ" />
+<meta name="description" content="МСГ" />
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'H1yy3w':{'hash':'8733cf1664c503f871786f2acd4b908f'},'LkGdQn':{'hash':'e182942bd70d9f593366558a3fa0ae4a'},'XEVOpk':{'hash':'7d40502cfc335fb0b3ec85de80f3f967'}},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'120'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+<script type="text/javascript" data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);</script>
+
+
+<link href="http://www.iig-ltd.ru/bitrix/js/main/core/css/core.css?14492171763963" type="text/css"  rel="stylesheet" />
+<link href="http://www.iig-ltd.ru/bitrix/templates/msg/styles.css?14501752084373" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="http://www.iig-ltd.ru/bitrix/templates/msg/template_styles.css?15209760069611" type="text/css"  data-template-style="true"  rel="stylesheet" />
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.iig-ltd.ru/bitrix/templates/msg/favicon.ico" />
+<link href="http://www.iig-ltd.ru/bitrix/templates/msg/reset.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://www.iig-ltd.ru/bitrix/templates/msg/slide.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://www.iig-ltd.ru/bitrix/templates/msg/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+<link href="css/new.css" rel="stylesheet" type="text/css" media="screen" />
+
+	</head>
+<body>
+<div id="page-wrapper">
+<!-- Panel -->
+<div id="toppanel">
+	<div id="panel">
+		<div class="content clearfix">
+
+			<div id="bxdynamic_H1yy3w_start" style="display:none"></div><div class="sitemap_header"><h1>Навигация</h1></div>
+<div class="left">
+
+		<ul class="map-level-0">
+
+
+
+
+
+
+				<li><a href="http://www.iig-ltd.ru/o_kompanii/">О компании</a>					<ul class="map-level-1">
+
+
+
+
+
+
+
+
+
+					<li><a href="http://www.iig-ltd.ru/o_kompanii/news/">Новости</a></li>
+
+
+
+
+
+
+
+
+
+					<li><a href="http://www.iig-ltd.ru/o_kompanii/raskrytie-informatsii/">Раскрытие информации</a></li>
+
+
+
+
+
+
+
+
+
+					<li><a href="http://www.iig-ltd.ru/o_kompanii/kontaktnaya-informatsiya/">Контакты</a></li>
+
+
+
+
+
+							</ul></li>
+
+
+
+				<li><a href="http://www.iig-ltd.ru/klientam/">Клиентам</a>					<ul class="map-level-1">
+
+
+
+
+
+
+
+
+
+					<li><a href="http://www.iig-ltd.ru/klientam/perechen/">Перечень осуществляемых видов страхования, опыт работы</a></li>
+
+
+
+
+
+
+
+
+
+					<li><a href="http://www.iig-ltd.ru/klientam/pravila/">Правила страхования и страховые тарифы</a></li>
+
+
+
+
+
+							</ul></li>
+
+							</ul>
+				</div>
+
+				<div class="left">
+				<ul class="map-level-0">
+
+
+				<li><a href="http://www.iig-ltd.ru/strachovoy_sluchay/">Страховой случай</a>					<ul class="map-level-1">
+
+
+
+
+
+
+
+
+
+					<li><a href="http://www.iig-ltd.ru/strachovoy_sluchay/meditsina/">Для застрахованных по программам ДМС</a></li>
+
+
+
+
+
+
+
+
+
+					<li><a href="http://www.iig-ltd.ru/strachovoy_sluchay/puteshestvie/">Для застрахованных по программам ВЗР</a></li>
+
+
+
+
+
+							</ul></li>
+
+							</ul>
+				</div>
+
+				<div class="left">
+				<ul class="map-level-0">
+
+
+				<li><a href="http://www.iig-ltd.ru/krym/">Программы страхования для Крыма</a>					<ul class="map-level-1">
+
+
+
+
+
+
+
+
+
+					<li><a href="http://www.iig-ltd.ru/krym/neschastnyj-sluchaj/">Страхование от несчастных случаев и болезней</a></li>
+
+
+
+
+
+							</ul></li>
+
+							</ul>
+				</div>
+
+				<div class="left">
+				<ul class="map-level-0">
+
+
+					<li><a href="http://www.iig-ltd.ru/polis/">Проверка<br />полисов (бланков)</a></li>
+
+
+
+
+
+
+		</ul>
+</div><div id="bxdynamic_H1yy3w_end" style="display:none"></div>
+
+		</div>
+	</div>
+    <!-- The tab on top -->
+	<div class="tab">
+		<ul class="login">
+	    		<li id="toggle">
+				<a id="open" class="open" href="#">Весь сайт</a>
+				<a id="close" style="display: none;" class="close" href="#">Закрыть</a>
+			</li>
+		</ul>
+	</div>
+    <!-- / top -->
+</div>
+<!--panel -->
+        <div id="header">
+            <div id="h_left_block"><a href="http://iig-ltd.ru/"></a></div>
+            <div id="h_center_block">
+				<!--<div id="h_data_links">
+					<a href="http://www.iig-ltd.ru/zakazat_zvonok/index.php" class="call_order">Заказать звонок</a> | <a href="http://www.iig-ltd.ru/vyzvat_agenta/index.php" class="call_agent">Вызвать агента</a>
+				</div>-->
+                <div id="h_data_telnum">+7 499 703-37-37</div>
+                <div id="h_data_adrr">г. Москва, пер. Сивцев Вражек, д. 29/16</div>
+                <div id="h_data_license">Лицензии Банка России: СЛ № 3594, СИ № 3594</div>
+            </div>
+        <div id="h_right_block">
+        <div id="h_feedback_form"><a href="http://www.iig-ltd.ru/feedback/index.php" class="feedback_window" alt="Обратная связь">Обратная связь</a></div>
+		</div>
+            <div class="clr"></div>
+        </div>
+        <div id="gradient_bar_up"></div>
+          <div id="content_wrapper">
+           <!-- БЛОК МЕНЮ  -->
+           <div id="menu_lvl_one_wrapper">
+				<div id="bxdynamic_LkGdQn_start" style="display:none"></div>
+<ul class="menu_lvl_one">
+			<div><li class=""><a href="http://www.iig-ltd.ru/o_kompanii/">О компании</a></li></div>
+
+			<div><li class=""><a href="http://www.iig-ltd.ru/klientam/">Клиентам</a></li></div>
+
+			<div><li class=""><a href="http://www.iig-ltd.ru/strachovoy_sluchay/">Страховой случай</a></li></div>
+
+			<div><li class=""><a href="http://www.iig-ltd.ru/krym/">Программы страхования для Крыма</a></li></div>
+
+			<div><li class="selected "><a href="http://www.iig-ltd.ru/polis/">Проверка<br />полисов (бланков)</a></li></div>
+
+</ul>
+<div id="bxdynamic_LkGdQn_end" style="display:none"></div>
+           </div>
+           <!-- БЛОК С КОНТЕНТОМ НА ГЛАВНОЙ -->
+
+
+
+
+
+			<div id="page_content" style="width: 695px">
+				<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+				<div class="viewport" style="width: 100%">
+				<div class="overview">
+
+                    <!-- new check -->
+                    <div class="new-check">
+                        <h2>Сервис проверки подлинности полисов ДМС трудовых мигрантов</h2>
+                        <div class="new-check-polis">
+                            <div class="new-check-field-1">
+                                <label>Серия бланка:</label>
+                                <input type="text" id="new-check-polis-series" readonly value="23" disabled="disabled" />
+                            </div>
+                            <div class="new-check-field-2">
+                                <label>Номер бланка:</label>
+                                <input type="text" id="new-check-polis-number" />
+                            </div>
+                            <a href="#" id="new-check-polis-submit">Искать</a>
+                            <span class="new-check-polis-number-hint">Номер бланка должен содержать шесть цифр от 0 до 9</span>
+                            <div class="new-check-polis-result" id="new-check-polis-success">
+                                <div class="new-check-polis-result-title"><img src="images/new-check-polis-success.png" alt="" /> Бланк серия <span class="new-check-polis-result-title-series">23</span> номер <span class="new-check-polis-result-title-number">123456</span> подлинный</div>
+                                <a href="#" class="new-check-polis-result-close">Новый поиск</a>
+                            </div>
+                            <div class="new-check-polis-result" id="new-check-polis-error">
+                                <div class="new-check-polis-result-title"><img src="images/new-check-polis-error.png" alt="" /> Бланк серия <span class="new-check-polis-result-title-series">23</span> номер <span class="new-check-polis-result-title-number">123456</span> не найден</div>
+                                <a href="#" class="new-check-polis-result-close">Искать снова</a>
+                            </div>
+                        </div>
+                   </div>
+                   <!-- new check END -->
+
+</div>
+</div>
+</div>
+<div class="clr"></div>
+          </div>
+          <div id="gradient_bar_dwn"></div>
+<!--ПОДВАЛ-->
+          <div id="bottom_menu_wrap">
+<div id="bxdynamic_XEVOpk_start" style="display:none"></div>
+	<div class="bottom_menu_block bitrixx_fix">
+          <p><a href="#">Корпоративное страхование</a></p>
+          		<div class="bottom_menu_block_pic1"></div>
+</div>
+	<div class="bottom_menu_block ">
+          <p><a href="#">Страхование физических лиц</a></p>
+          		<div class="bottom_menu_block_pic2"></div>
+</div>
+<div id="bxdynamic_XEVOpk_end" style="display:none"></div>
+		  <div class="clr"></div>
+		  <div id="footer_copyright">©2015 Создание и поддержка сайта: ООО "Ю Эс Пи Групп".<br />
+Комфортный просмотр сайта www.iig-ltd.ru рекомендуем осуществлять используя последние версии настольных и мобильных браузеров: Microsoft Internet Explorer, Mozilla Firefox, Opera, Safari, Google Chrome. <br />
+Правильное отображение сайта с использованием устаревшего обозревателя сети Интернет (браузера) не гарантируется.</div>
+          </div>
+<!--КОНЕЦ ПОДВАЛ-->
+    </div>
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI','COOKIE_PREFIX':'BITRIX_MSG','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script><script type="text/javascript" src="http://www.iig-ltd.ru/bitrix/js/main/core/core.js?1485522676116711"></script>
+<script type="text/javascript" src="http://www.iig-ltd.ru/bitrix/js/main/core/core_db.js?148552267611148"></script>
+<script type="text/javascript" src="http://www.iig-ltd.ru/bitrix/js/main/core/core_ajax.js?148552267635622"></script>
+<script type="text/javascript" src="http://www.iig-ltd.ru/bitrix/js/main/json/json2.min.js?14466375983467"></script>
+<script type="text/javascript" src="http://www.iig-ltd.ru/bitrix/js/main/core/core_ls.js?144921718210430"></script>
+<script type="text/javascript" src="http://www.iig-ltd.ru/bitrix/js/main/core/core_fx.js?148552267616864"></script>
+<script type="text/javascript" src="http://www.iig-ltd.ru/bitrix/js/main/core/core_frame_cache.js?148552265017555"></script>
+
+
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "0e07b1ab1419eb18b52cd86c6cb7671a"]); _ba.push(["host", "www.iig-ltd.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://www.iig-ltd.ru/bitrix/templates/msg/js/jquery.colorbox.js" type="text/javascript"></script>
+<script src="http://www.iig-ltd.ru/bitrix/templates/msg/js/slide.js" type="text/javascript"></script>
+<script src="http://www.iig-ltd.ru/bitrix/templates/msg/js/jquery.tinyscrollbar.js" type="text/javascript"></script>
+<script src="http://www.iig-ltd.ru/bitrix/templates/msg/js/script.js" type="text/javascript"></script>
+<script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="js/new.js" type="text/javascript"></script>
+<script>
+			$(document).ready(function(){
+				$(".feedback_window").colorbox({iframe:true, width:"70%", height:"70%"});
+				$(".info_window").colorbox({iframe:true, width:"70%", height:"70%px"});
+				$(".info_map").colorbox({iframe:true, width:"800px", height:"500px"});
+				$('#page_content').tinyscrollbar();
+			});
+	</script>
+
+</body>
+</html><!--49f6fad2d16692d752dff233f2c441df-->
