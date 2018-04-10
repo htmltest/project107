@@ -251,7 +251,7 @@
 
                     <!-- new check -->
                     <div class="new-check">
-                        <h2>Сервис проверки подлинности полисов ДМС трудовых мигрантов</h2>
+                        <h2>Сервис проверки подлинности бланков полисов ДМС трудовых мигрантов</h2>
                         <div class="new-check-polis">
                             <div class="new-check-field-1">
                                 <label>Серия бланка:</label>
@@ -259,17 +259,17 @@
                             </div>
                             <div class="new-check-field-2">
                                 <label>Номер бланка:</label>
-                                <input type="text" id="new-check-polis-number" />
+                                <input type="text" id="new-check-polis-number" maxlength="6" />
                             </div>
                             <a href="#" id="new-check-polis-submit">Искать</a>
                             <span class="new-check-polis-number-hint">Номер бланка должен содержать шесть цифр от 0 до 9</span>
                             <div class="new-check-polis-result" id="new-check-polis-success">
-                                <div class="new-check-polis-result-title"><img src="images/new-check-polis-success.png" alt="" /> Бланк серия <span class="new-check-polis-result-title-series">23</span> номер <span class="new-check-polis-result-title-number">123456</span> подлинный</div>
-                                <a href="#" class="new-check-polis-result-close">Новый поиск</a>
+                                <div class="new-check-polis-result-title"><img src="images/new-check-polis-success.png" alt="" /> Бланк серия <span class="new-check-polis-result-title-series">23</span> номер <span class="new-check-polis-result-title-number">123456</span> действителен</div>
+                                <a href="#" class="new-check-polis-result-close-new">закрыть</a>
                             </div>
                             <div class="new-check-polis-result" id="new-check-polis-error">
-                                <div class="new-check-polis-result-title"><img src="images/new-check-polis-error.png" alt="" /> Бланк серия <span class="new-check-polis-result-title-series">23</span> номер <span class="new-check-polis-result-title-number">123456</span> не найден</div>
-                                <a href="#" class="new-check-polis-result-close">Искать снова</a>
+                                <div class="new-check-polis-result-title"><img src="images/new-check-polis-error.png" alt="" /> Бланк серия <span class="new-check-polis-result-title-series">23</span> номер <span class="new-check-polis-result-title-number">123456</span> недействителен</div>
+                                <a href="#" class="new-check-polis-result-close-new">закрыть</a>
                             </div>
                         </div>
                    </div>
@@ -319,7 +319,6 @@
 <script src="http://www.iig-ltd.ru/bitrix/templates/msg/js/slide.js" type="text/javascript"></script>
 <script src="http://www.iig-ltd.ru/bitrix/templates/msg/js/jquery.tinyscrollbar.js" type="text/javascript"></script>
 <script src="http://www.iig-ltd.ru/bitrix/templates/msg/js/script.js" type="text/javascript"></script>
-<script src="js/jquery.maskedinput.js" type="text/javascript"></script>
 <script src="js/new.js" type="text/javascript"></script>
 <script>
 			$(document).ready(function(){

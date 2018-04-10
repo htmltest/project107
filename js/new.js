@@ -1,5 +1,11 @@
 $(document).ready(function() {
-    $('#new-check-polis-number').mask('999999');
+    $('#new-check-polis-number').on('keypress', function(e) {
+        var charCode = (e.which) ? e.which : e.keyCode
+        if (charCode > 31 && (charCode < 43 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    });
 
     $('#new-check-polis-submit').click(function(e) {
         var curSeries = $('#new-check-polis-series').val();
@@ -16,11 +22,9 @@ $(document).ready(function() {
                 $('.new-check-polis-result-title-series').html(curSeries);
                 $('.new-check-polis-result-title-number').html(curNumber);
                 if (data == 'success') {
-                    $('#page_content').css({'position': 'relative'}).append($('#new-check-polis-success').clone(true));
-                    $('#page_content > #new-check-polis-success').show();
+                    $('#new-check-polis-success').show();
                 } else {
-                    $('#page_content').css({'position': 'relative'}).append($('#new-check-polis-error').clone(true));
-                    $('#page_content > #new-check-polis-error').show();
+                    $('#new-check-polis-error').show();
                 }
             });
         } else {
@@ -29,10 +33,10 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    $('.new-check-polis-result-close').click(function(e) {
+    $('.new-check-polis-result-close-new').click(function(e) {
         $('#new-check-polis-number').val('');
         $('#new-check-polis-number').removeClass('error');
-        $('#page_content > .new-check-polis-result').remove();
+        $('.new-check-polis-result').hide();
         e.preventDefault();
     });
 });
