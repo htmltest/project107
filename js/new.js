@@ -11,7 +11,7 @@ $(document).ready(function() {
         var curSeries = $('#new-check-polis-series').val();
         var curNumber = $('#new-check-polis-number').val();
         if (/^\d{6}$/.test(curNumber)) {
-            $('#new-check-polis-number').removeClass('error');
+            $('#new-check-polis-number, .new-check-polis-number-hint').removeClass('error');
             $.ajax({
                 type: 'POST',
                 url: 'check_polis.html',
@@ -28,14 +28,14 @@ $(document).ready(function() {
                 }
             });
         } else {
-            $('#new-check-polis-number').addClass('error');
+            $('#new-check-polis-number, .new-check-polis-number-hint').addClass('error');
         }
         e.preventDefault();
     });
 
     $('.new-check-polis-result-close-new').click(function(e) {
         $('#new-check-polis-number').val('');
-        $('#new-check-polis-number').removeClass('error');
+        $('#new-check-polis-number, .new-check-polis-number-hint').removeClass('error');
         $('.new-check-polis-result').hide();
         e.preventDefault();
     });

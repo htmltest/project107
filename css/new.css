@@ -9,8 +9,10 @@
 .new-check-polis input.error {border-color:#ec6163}
 #page_content a#new-check-polis-submit {float:left; margin:23px 0 0 19px; width:91px; height:36px; border-radius:4px; background:#115064; color:#fff; text-align:center; font:12px/36px "Roboto Condensed", sans-serif; padding:0; text-decoration:none}
 .new-check-polis-number-hint {float:left; width:100%; color:#000; font:12px/20px "Roboto Condensed", sans-serif; padding:15px 0 0 0}
+.new-check-polis-number-hint.error {color:#ec6163}
 .new-check-polis-result {display:none; position:absolute; left:-47px; top:-12px; width:505px; height:144px; z-index:2; background:#fff; border-radius:10px}
 .new-check-polis-result-title {font:bold 19px/144px "Roboto Condensed", sans-serif; color:#000; text-align:center; padding:0}
 .new-check-polis-result-title img {vertical-align:middle; margin:-2px 4px 0 0}
 .new-check-polis-result-title-number {color:#187390}
-#page_content a.new-check-polis-result-close-new {color:#187390; font:bold 11px/17px "Roboto Condensed", sans-serif; text-decoration:none; position:absolute; right:10px; top:5px}
+#page_content a.new-check-polis-result-close-new {color:#5e5f62; font:bold 12px/17px "Roboto Condensed", sans-serif; text-decoration:none; position:absolute; right:10px; top:5px}
+#page_content a.new-check-polis-result-close-new:hover {color:#187390}
